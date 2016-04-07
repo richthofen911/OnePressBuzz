@@ -16,15 +16,12 @@ public class PermissionHandler {
         return (ContextCompat.checkSelfPermission(context, permissionName) == PackageManager.PERMISSION_GRANTED);
     }
 
-    public static void requestPermission(Activity activity, String permissionName){
+    public static void requestPermission(Activity activity, String permissionName, int requestCode){
         if(ActivityCompat.shouldShowRequestPermissionRationale(activity, permissionName)){
             Log.e("request reason", "need the permission");
         }else {
             Log.e("request permission", permissionName);
-            ActivityCompat.requestPermissions(activity, new String[]{permissionName}, 1);
+            ActivityCompat.requestPermissions(activity, new String[]{permissionName}, requestCode);
         }
     }
-
-
-
 }

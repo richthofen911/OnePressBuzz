@@ -11,8 +11,29 @@
     android:orientation="vertical"
     tools:context="net.callofdroidy.buzznaomeg.ActivityMain">
 
+    <Button
+        android:id="@+id/btn_gun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="滚"/>
+
+    <Button
+        android:id="@+id/btn_da"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打过来"/>
+
+    <Button
+        android:id="@+id/btn_deng"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="等一下"/>
+
     <EditText
         android:id="@+id/et_destination"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

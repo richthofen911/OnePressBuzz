@@ -1,5 +1,6 @@
 package net.callofdroidy.buzznaomeg;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -60,7 +61,8 @@ public class MyService extends Service {
         };
         registerReceiver(receiverSent, new IntentFilter("SMS_SENT"));
 
-        SmsManager.getDefault().sendTextMessage(intent.getStringExtra("destination"), null, intent.getStringExtra("content"), sentPI, null);
+
+
 
         return START_NOT_STICKY;
     }
