@@ -61,8 +61,7 @@ public class MyService extends Service {
         };
         registerReceiver(receiverSent, new IntentFilter("SMS_SENT"));
 
-
-
+        SmsManager.getDefault().sendTextMessage(intent.getStringExtra("destination"), null, intent.getStringExtra("content"), sentPI, null);
 
         return START_NOT_STICKY;
     }
