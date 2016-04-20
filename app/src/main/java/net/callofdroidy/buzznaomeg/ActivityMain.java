@@ -36,7 +36,7 @@ public class ActivityMain extends AppCompatActivity {
         etDestination.setText(spSMSContent.getString("destination", "Phone Number as +1**********"));
         etSMSContent.setText(spSMSContent.getString("content", "Content Here"));
 
-        findViewById(R.id.btn_gun).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn_gun_bu_gun).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 etSMSContent.setText("滚了");
@@ -56,6 +56,7 @@ public class ActivityMain extends AppCompatActivity {
                 etSMSContent.setText("稍微等一下");
             }
         });
+
 
         findViewById(R.id.btn_send).setOnClickListener(new View.OnClickListener() {
             @Override

@@ -11,25 +11,86 @@
     android:orientation="vertical"
     tools:context="net.callofdroidy.buzznaomeg.ActivityMain">
 
-    <Button
-        android:id="@+id/btn_gun"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="滚"/>
+    <RelativeLayout
+        android:layout_width="288dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_gun_bu_gun"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="滚?"/>
 
-    <Button
-        android:id="@+id/btn_da"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打过来"/>
+        <Button
+            android:id="@+id/btn_gun"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btn_gun_bu_gun"
+            android:layout_marginStart="9dp"
+            android:text="滚了"/>
 
-    <Button
-        android:id="@+id/btn_deng"
+        <Button
+            android:id="@+id/btn_arrive"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btn_gun"
+            android:layout_marginStart="9dp"
+            android:text="到了"/>
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="等一下"/>
+        android:layout_width="288dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_da"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="打过来"/>
+
+        <Button
+            android:id="@+id/btn_chuichuimonster"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btn_da"
+            android:layout_marginStart="9dp"
+            android:text="吹吹兽"/>
+
+        <Button
+            android:id="@+id/btn_deng"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btn_chuichuimonster"
+            android:layout_marginStart="9dp"
+            android:text="等一下"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_5min"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="5min"/>
+
+        <Button
+            android:id="@+id/btn_10min"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btn_5min"
+            android:layout_marginStart="9dp"
+            android:text="10min"/>
+
+        <Button
+            android:id="@+id/btn_15min"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btn_10min"
+            android:layout_marginStart="9dp"
+            android:text="15min"/>
+    </RelativeLayout>
 
     <EditText
         android:id="@+id/et_destination"
